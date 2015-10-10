@@ -21,11 +21,11 @@ try:
 except ImportError:
     pass
 
-__project__      = 'gpiozero'
-__version__      = '0.7.0'
-__author__       = 'Ben Nuttall'
-__author_email__ = 'ben@raspberrypi.org'
-__url__          = 'https://github.com/RPi-Distro/python-gpiozero'
+__project__      = 'gpioone'
+__version__      = '0.0.0'
+__author__       = 'Simon Walters'
+__author_email__ = 'simplecy@googlemail.com'
+__url__          = 'https://github.com/cymplecy/python-gpioone'
 __platforms__    = 'ALL'
 
 __classifiers__ = [
