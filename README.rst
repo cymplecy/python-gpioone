@@ -2,6 +2,8 @@
 gpioone
 ========
 
+Alpha Code - don not use yet
+
 A simple module to control and interface to things connected  to the GPIO pins on the Raspberry Pi.
 
 based on GPIOZero created by `Ben Nuttall`_ of the `Raspberry Pi Foundation`_, `Dave Jones`_, and
