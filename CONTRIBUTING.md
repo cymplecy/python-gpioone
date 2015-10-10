@@ -8,6 +8,8 @@ components.
 If a proposed change added an advanced feature but made basic usage more
 complex, it is unlikely to be added.
 
+Unlike gpiozero, if a feature is considered as giving too much hand-holding, it will be withdrawn :)
+
 ## Suggestions
 
 Please make suggestions by opening an
@@ -22,13 +24,8 @@ problem clearly using code examples.
 
 ## Documentation
 
-The documentation source lives in the
-[docs](https://github.com/RPi-Distro/python-gpiozero/tree/master/docs) folder
-and is rendered from markdown into HTML using [mkdocs](http://www.mkdocs.org/).
-Contributions to the documentation are welcome but should be easy to read and
-understand.
+
 
 ## Python
 
 - Python 2/3 compatibility
-- PEP8-compliance (with exceptions)
