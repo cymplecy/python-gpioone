@@ -1,16 +1,16 @@
 ========
-gpiozero
+gpioone
 ========
 
-A simple interface to everyday GPIO components used with Raspberry Pi.
+A simple module to control and interface to things connected  to the GPIO pins on the Raspberry Pi.
 
-Created by `Ben Nuttall`_ of the `Raspberry Pi Foundation`_, `Dave Jones`_, and
-other contributors.
+based on GPIOZero created by `Ben Nuttall`_ of the `Raspberry Pi Foundation`_, `Dave Jones`_, and
+other contributors
 
 Latest release
 ==============
 
-The latest release is **v0.7.0 beta 2** released on 9th October 2015.
+Their is no release yet
 
 About
 =====
@@ -18,32 +18,26 @@ About
 With very little code, you can quickly get going connecting your physical
 components together::
 
-    from gpiozero import LED, Button
+    import gpioone as gp
+    gp.pinnames(BCM) // not needed if using physical pin numbers but included for Cambridge compatibility
+    led = gp.pin(11) // pins 11,12,13,15,18 are defaulted as output pins for controlling things
+    button = gp.pin(7) // all other pins are defaulted to inputs
 
-    led = LED(2)
-    button = Button(3)
-
-    button.when_pressed = led.on
-    button.when_released = led.off
-
-The library includes interfaces to many simple everyday components, as well as
-some more complex things like sensors, analogue-to-digital converters, full
-colour LEDs, robotics kits and more.
+    while true:
+      if button.pressed:
+        led.on()
+      else:
+        led.off()
 
 Install
 =======
 
-Install with pip::
-
-    sudo pip install gpiozero
-    sudo pip-3.2 install gpiozero
-
-Both Python 3 and Python 2 are supported. Python 3 is recommended!
+ Intstall not yet operational
 
 Documentation
 =============
 
-Comprehensive documentation is available at `pythonhosted.org/gpiozero`_.
+Not done
 
 Development
 ===========
@@ -51,28 +45,11 @@ Development
 This project is being developed on `GitHub`_. Join in:
 
 * Provide suggestions, report bugs and ask questions as `Issues`_
-* Provide examples we can use as `recipes`_
 * Contribute to the code
 
-Alternatively, email suggestions and feedback to ben@raspberrypi.org or add to
-the `Google Doc`_.
 
 Contributors
 ============
 
-- `Ben Nuttall`_ (project maintainer)
-- `Dave Jones`_
-- `Martin O'Hanlon`_
+- `Simon Walters`_ (project maintainer)
 
-
-.. _Ben Nuttall: https://github.com/bennuttall
-.. _Raspberry Pi Foundation: https://www.raspberrypi.org/
-.. _Dave Jones: https://github.com/waveform80
-.. _pythonhosted.org/gpiozero: http://pythonhosted.org/gpiozero
-.. _GitHub: https://github.com/RPi-Distro/python-gpiozero
-.. _Issues: https://github.com/RPi-Distro/python-gpiozero/issues
-.. _recipes: http://pythonhosted.org/gpiozero/recipes/
-.. _Google Doc: https://goo.gl/8zJLif
-.. _Ben Nuttall: https://github.com/bennuttall
-.. _Dave Jones: https://github.com/waveform80
-.. _Martin O'Hanlon: https://github.com/martinohanlon
