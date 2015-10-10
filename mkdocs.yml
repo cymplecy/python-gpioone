@@ -1,11 +1,11 @@
-site_name: GPIO Zero
+site_name: GPIO One
 theme: readthedocs
-site_url: http://pythonhosted.org/gpiozero
-repo_url: https://github.com/RPi-Distro/python-gpiozero
+site_url: http://pythonhosted.org/gpioone
+repo_url: https://github.com/cymplecy/python-gpioone
 site_description: A simple interface to everyday GPIO components used with Raspberry Pi
-site_author: Ben Nuttall
+site_author: Simon Walters
 site_dir: pythonhosted
-google_analytics: ['UA-46270871-6', 'pythonhosted.org/gpiozero']
+google_analytics: ['UA-46270871-6', 'pythonhosted.org/gpioone']
 pages:
 - 'Home': 'index.md'
 - 'Input Devices': 'inputs.md'
